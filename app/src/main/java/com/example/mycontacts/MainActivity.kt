@@ -12,11 +12,19 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         val firstName = "Saadiq"
         val lastName = "Steyn"
-        val address = "39A Ranelaugh Road"
+        val address = "39 Ranelagh Road"
         val isMale = true
         val dayOfBirth = "21"
         val monthOfBirth = "October"
         val yearOfBirth = "2006"
+        println(firstName)
+        println(lastName)
+        println(address)
+        println(isMale)
+        println(dayOfBirth)
+        println(monthOfBirth)
+        println(yearOfBirth)
+        
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
