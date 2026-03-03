@@ -1,6 +1,7 @@
 package com.example.mycontacts
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,19 +13,17 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         val firstName = "Saadiq"
         val lastName = "Steyn"
-        val address = "39 Ranelagh Road"
+        val myAddress = "39 Ranelagh Road"
         val isMale = true
         val dayOfBirth = "21"
         val monthOfBirth = "October"
         val yearOfBirth = "2006"
-        println( "My name is Saadiq")
-        println( "My last name is Steyn")
-        println( "I live in my 39A Ranelagh Road")
-        println( "I am Male")
-        println( "My day of birth is on the 21rst")
-        println( "My month of birth is October")
-        println( "I was born in the year 2006")
-
+        Log.d(
+            "Good evening",
+            firstName + " " + lastName + ", from what I recall, you live in " + myAddress +
+                    " and you were born on the " + dayOfBirth + " " + monthOfBirth + " " + yearOfBirth +
+                    " and it was also mentioned that you are " + (if (isMale) "male" else "female")
+        )
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
