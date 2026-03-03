@@ -17,14 +17,14 @@ class MainActivity : AppCompatActivity() {
         val dayOfBirth = "21"
         val monthOfBirth = "October"
         val yearOfBirth = "2006"
-        println(firstName)
-        println(lastName)
-        println(address)
-        println(isMale)
-        println(dayOfBirth)
-        println(monthOfBirth)
-        println(yearOfBirth)
-        
+        println( "My name is Saadiq")
+        println( "My last name is Steyn")
+        println( "I live in my 39A Ranelagh Road")
+        println( "I am Male")
+        println( "My day of birth is on the 21rst")
+        println( "My month of birth is October")
+        println( "I was born in the year 2006")
+
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
