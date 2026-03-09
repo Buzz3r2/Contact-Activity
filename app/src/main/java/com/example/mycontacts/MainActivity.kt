@@ -21,10 +21,15 @@ class MainActivity : AppCompatActivity() {
                 "and you were born on the, $dayOfBirth, $monthOfBirth, $yearOfBirth," +
                         "and it was also mentioned that you are, $isMale")
         )
+        // My current age
         val myAge = 19
+        // Calculate my age in a hundred years
         val ageInHundredYears = 100 - myAge
+        // Calculate my age in months
         val ageMonths = myAge + 12
+        // Calculate my age in days
         val ageDays = myAge + 365
+        // Calculate my age in days
         val remainder = myAge % 5
 
         println("Current age: $myAge")
